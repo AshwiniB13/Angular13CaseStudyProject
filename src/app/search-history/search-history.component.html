@@ -1,0 +1,9 @@
+
+<div class="row" style="padding-left:10%">
+  <p>search-history works!</p>
+  <ul>
+    <li style="color:blue; cursor: pointer; " *ngFor="let item of mySearchHistory" (click)="PastSearchClick(item.searchKey)">
+      {{item.searchKey}}
+    </li>
+  </ul>
+</div>
